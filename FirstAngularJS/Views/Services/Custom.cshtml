@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Custom";
+}
+
+@section scripts {
+
+    <script src="~/Scripts/Services/custom-services.js"></script>
+}
+
+<h2>Custom</h2>
+
+<div ng-app="customServiceExamples" ng-controller="customServiceController">
+    <button ng-click="callNotify('success')">Click me</button>
+</div>
+
