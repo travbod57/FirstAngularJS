@@ -1,8 +1,9 @@
 ﻿var myApp = angular.module('customServiceExamples', []);
 
-myApp.controller('customServiceController', ['$scope', 'notify', function ($scope, notify) {
+myApp.controller('customServiceController', ['$scope', '$log', 'notify', function ($scope, $log, notify) {
     $scope.callNotify = function (msg) {
         notify.notify(msg);
+        $log.log('notify clicked');
     };
 }]);
 
