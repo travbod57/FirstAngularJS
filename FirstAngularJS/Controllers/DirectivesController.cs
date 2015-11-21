@@ -22,5 +22,10 @@ namespace FirstAngularJS.Controllers
         {
             return PartialView("~/Views/Directives/_CustomerTemplate.cshtml");
         }
+
+        public ActionResult BootstrapModal()
+        {
+            return View();
+        }
     }
 }
